@@ -4,6 +4,8 @@ var edge = require('edge');
 
 var payload = { anInteger: 1, aNumber: 3.1415, aString: 'fooaaa', aBoolean: true, aBuffer: new Buffer(10), anArray: [ 1, 'fooaaaaa' ], anObject: { a: 'foaaaao', b: 12 };
 
+// https://github.com/mongolab/mongodb-driver-examples/blob/master/c%23/CSharpSimpleExample.cs
+
 var getPerson = edge.func(function () {/*
     using System.Threading.Tasks;
 
