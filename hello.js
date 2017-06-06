@@ -5,10 +5,12 @@ var edge = require('edge');
 var payload = { anInteger: 1, aNumber: 3.1415, aString: 'fooaaa', aBoolean: true, aBuffer: new Buffer(10), anArray: [ 1, 'fooaaaaa' ], anObject: { a: 'foaaaao', b: 12 };
 
 // https://github.com/mongolab/mongodb-driver-examples/blob/master/c%23/CSharpSimpleExample.cs
+// mongodb://jdavid:jdmcam1385@ds147995.mlab.com:47995/knowledgebase
+// CURLING: curl --data "{ anInteger: 1, aNumber: 3.1415, aString: 'fooaaa', aBoolean: true, aBuffer: new Buffer(10), anArray: [ 1, 'fooaaaaa' ], anObject: { a: 'foaaaao', b: 12 }" https://wt-1dab165a842a25a9750ca5e80cd906bb-0.run.webtask.io/hello
+
 
 var getPerson = edge.func(function () {/*
     using System.Threading.Tasks;
-
     public class Person
     {
         public int anInteger = 1;
